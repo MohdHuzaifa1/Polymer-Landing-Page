@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  transition: all 0.5s;
+  font-family: 'Inter', sans-serif;
+}
+body {
+  margin: 10px;
+}
+section {
+  padding: 15px;
+  border-radius: 10px;
+  background-image:linear-gradient(to bottom right, #FBD7FF 10%, #FFDEC1 80%)
+}
+.hero-section > header {
+  background: #fff;
+  border-radius: 10px;
+}
+header .logo {
+  padding: 10px;
+  display: inline-flex;
+  align-items: center;
+  margin-left: 5px;
+}
+.logo > span {
+  margin-left: 5px;
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+.logo > svg {
+  height: 32px;
+}
+.hamburger {
+  display: inline-flex;
+  float: right;
+  margin-right: 5px;
+  padding: 15px;
+  align-items: center;
+}
+.nav-list {
+  width: 100%;
+  display: none;
+  flex-direction: column;
+  border-top: 1px solid #E1E1E1;
+  padding: 15px;
+  list-style: none;
+  text-decoration: none;
+}
+.nav-list-item {
+  margin-bottom: 5px;
+  padding: 10px;
+  text-align: center;
+  font-weight: 500;
+}
+.cta-btn-group {
+  display: none;
+  padding: 0 15px 15px;
+}
+.cta-btn {
+  margin: 10px 0 5px;
+  padding: 10px;
+  border: none;
+  outline: none;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 500;
+  width: 100%;
+}
+.cta-btn.login {
+  background: #E1E1E1;
+  color: black;
+}
+.cta-btn.signup {
+  background: #000000;
+  color: white;
+}
+header.active .nav-list {
+  display: flex;
+}
+header.active .cta-btn-group {
+  display: block;
+}
+h1.hero-heading {
+  display: block;
+  margin: 0 auto;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+
+
+
+@media screen and (min-width: 896px){
+  .hamburger {
+    display: none;
+  }
+  .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .nav-list {
+    margin: 0;
+    border: none;
+    flex-direction: row;
+  }
+  .nav-list-item {
+    margin-bottom: 0;
+  }
+  .cta-btn-group {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+  }
+  .cta-btn {
+    width: max-content;
+    margin: 0 10px;
+  }
+}
+/* #ffafbd → #ffc3a0 */
