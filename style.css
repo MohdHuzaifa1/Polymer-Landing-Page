@@ -187,6 +187,37 @@ button.hero-cta-btn.light {
   height: auto;
   margin: 0 10px;
 }
+.floating-testimonial-container {
+  max-width: 360px;
+  padding: 15px 20px;
+  border-radius: 13px;
+  background: #000;
+  position: relative;
+  float: unset;
+}
+.float-testimonial {
+  width: 100%;
+  display: flex;
+  -webkit-column-gap: 20px;
+  -moz-column-gap: 20px;
+  column-gap: 20px;
+}
+.float-testimonial > img {
+  border-radius: 5px;
+}
+.float-testimonial > .testimonial > .statement {
+  color: white;
+  font-weight: 500;
+  font-size: clamp(15px, 1rem, 16px);
+  line-height: 1.5;
+}
+.float-testimonial > .testimonial > .statement-by {
+  color: #9c9c9c;
+  margin-top: 10px;
+}
+.team-section {
+  padding: 0;
+}
 
 
 @media screen and (min-width: 896px){
@@ -245,7 +276,13 @@ button.hero-cta-btn.light {
   }
   .companies-container {
     width: 70%;
+    padding-bottom: 50px;
     justify-content: center;
+  }
+  .floating-testimonial-container {
+    float: right;
+    position: relative;
+    top: -60px;
   }
 }
 /* #ffafbd → #ffc3a0 */
