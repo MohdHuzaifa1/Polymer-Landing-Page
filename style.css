@@ -220,7 +220,7 @@ button.hero-cta-btn.light {
   padding-top: 50px;
   background-image:linear-gradient(to top right, #FBD7FF 10%, #FFDEC1 80%);
 }
-.team-section > h1:first-child {
+.team-section > h2:first-child {
   font-size: clamp(30px, 5vw, 60px);
   letter-spacing: -0.5px;
 }
@@ -342,7 +342,7 @@ button.hero-cta-btn.light {
   .team-section {
     padding: 70px 25px;
   }
-  .team-section > h1:first-child {
+  .team-section > h2:first-child {
     max-width: 440px;
   }
   .team-features-container {
