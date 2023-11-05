@@ -188,8 +188,9 @@ button.hero-cta-btn.light {
   margin: 0 10px;
 }
 .floating-testimonial-container {
-  max-width: 360px;
+  width: 100%;
   padding: 15px 20px;
+  margin-bottom: 10px;
   border-radius: 13px;
   background: #000;
   position: relative;
@@ -216,11 +217,64 @@ button.hero-cta-btn.light {
   margin-top: 10px;
 }
 .team-section {
-  padding: 0;
+  padding-top: 50px;
+  background-image:linear-gradient(to top right, #FBD7FF 10%, #FFDEC1 80%);
+}
+.team-section > h1:first-child {
+  font-size: clamp(30px, 5vw, 60px);
+  letter-spacing: -0.5px;
+}
+.team-features-container {
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  -webkit-column-gap: 30px;
+  -moz-column-gap: 30px;
+  column-gap: 30px;
+}
+.team-features-container > .team-features {
+  width: 100%;
+  display: flex;
+  -webkit-column-gap: 15px;
+  -moz-column-gap: 15px;
+  column-gap: 15px;
+  margin: 40px auto 20px;
+}
+.team-features > .icon {
+  display: inline-flex;
+  align-self: start;
+  align-items: center;
+  padding: 12px;
+  background: #fff;
+  border-radius: 7.5px;
+  -webkit-box-shadow:0 5px 20px #0002;
+  -moz-box-shadow: 0 5px 20px #0002;
+  box-shadow: 0 5px 20px #0002;
+}
+.team-features h3 {
+  font-weight: 600;
+}
+.team-features p {
+  margin: 7.5px auto;
+  line-height: 1.75;
+  font-size: 14px;
+  color: #555;
+}
+.team-features button {
+  margin: 7.5px 0;
+  padding: 10px 20px;
+  font-size: 15px;
+  font-weight: 500;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  background: #bbb4;
 }
 
-
 @media screen and (min-width: 896px){
+  .section {
+    padding: 25px;
+  }
   .hamburger {
     display: none;
   }
@@ -280,9 +334,23 @@ button.hero-cta-btn.light {
     justify-content: center;
   }
   .floating-testimonial-container {
+    width: 360px;
     float: right;
     position: relative;
     top: -60px;
+  }
+  .team-section {
+    padding: 70px 25px;
+  }
+  .team-section > h1:first-child {
+    max-width: 440px;
+  }
+  .team-features-container {
+    flex-direction: row;
+  }
+  .team-features {
+    flex-direction: column;
+    row-gap: 15px;
   }
 }
 /* #ffafbd → #ffc3a0 */
