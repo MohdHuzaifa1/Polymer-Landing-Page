@@ -189,7 +189,7 @@ button.hero-cta-btn.light {
 }
 .floating-testimonial-container {
   width: 100%;
-  padding: 15px 20px;
+  padding: 20px;
   margin-bottom: 10px;
   border-radius: 13px;
   background: #000;
@@ -199,29 +199,31 @@ button.hero-cta-btn.light {
 .float-testimonial {
   width: 100%;
   display: flex;
-  -webkit-column-gap: 20px;
-  -moz-column-gap: 20px;
-  column-gap: 20px;
+  -webkit-column-gap: 15px;
+  -moz-column-gap: 15px;
+  column-gap: 15px;
 }
 .float-testimonial > img {
   border-radius: 5px;
 }
 .float-testimonial > .testimonial > .statement {
   color: white;
-  font-weight: 500;
+  font-weight: 400;
   font-size: clamp(15px, 1rem, 16px);
-  line-height: 1.5;
+  line-height: 1.6;
 }
 .float-testimonial > .testimonial > .statement-by {
   color: #9c9c9c;
+  font-size: 14px;
   margin-top: 10px;
 }
 .team-section {
-  padding-top: 50px;
+  padding-top: 80px;
   background-image:linear-gradient(to top right, #FBD7FF 10%, #FFDEC1 80%);
 }
 .team-section > h2:first-child {
-  font-size: clamp(30px, 5vw, 60px);
+  font-size: clamp(30px, 3vw, 50px);
+  font-weight: 700;
   letter-spacing: -0.5px;
 }
 .team-features-container {
@@ -238,7 +240,7 @@ button.hero-cta-btn.light {
   -webkit-column-gap: 15px;
   -moz-column-gap: 15px;
   column-gap: 15px;
-  margin: 40px auto 20px;
+  margin: 40px auto 0px;
 }
 .team-features > .icon {
   display: inline-flex;
@@ -261,7 +263,7 @@ button.hero-cta-btn.light {
   color: #555;
 }
 .team-features button {
-  margin: 7.5px 0;
+  margin: 15px 0;
   padding: 10px 20px;
   font-size: 15px;
   font-weight: 500;
@@ -272,6 +274,9 @@ button.hero-cta-btn.light {
 }
 
 @media screen and (min-width: 896px){
+  body {
+    margin: 15px;
+  }
   .section {
     padding: 25px;
   }
@@ -338,19 +343,30 @@ button.hero-cta-btn.light {
     float: right;
     position: relative;
     top: -60px;
+    right: 30px;
+    border-radius: 10px;
+  }
+  .float-testimonial {
+    -webkit-column-gap: 20px;
+    -moz-column-gap: 20px;
+    column-gap: 20px;
   }
   .team-section {
-    padding: 70px 25px;
+    padding: 100px 35px 80px;
   }
   .team-section > h2:first-child {
     max-width: 440px;
+    line-height: 1.3;
   }
   .team-features-container {
     flex-direction: row;
   }
   .team-features {
     flex-direction: column;
-    row-gap: 15px;
+    row-gap: 25px;
+  }
+  .team-features p {
+    font-size: 16px;
   }
 }
 /* #ffafbd → #ffc3a0 */
