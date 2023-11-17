@@ -176,10 +176,11 @@ button.hero-cta-btn.light {
   font-weight: 600;
 }
 .companies-container {
-  width: clamp(70%, 90vw, 100%);
+  width: clamp(70%, 90vw, 1056px);
+  max-width: 850px;
   margin: 30px auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
   row-gap: 25px;
 }
@@ -275,12 +276,18 @@ h2 {
 }
 .app-features-section {
   display: flex;
+  justify-content: center;
+}
+.app-features-container {
+  display: flex;
   flex-direction: column;
+  justify-content: center;
   -webkit-column-gap: 30px;
   -moz-column-gap: 30px;
   column-gap: 30px;
+  margin: 0 auto;
 }
-.app-features-section>img {
+.app-features-section img {
   width: 100%;
   max-width: 400px;
   height: auto;
@@ -404,6 +411,9 @@ h2 {
   .app-features-section {
     flex-direction: row;
     padding: 50px 35px;
+  }
+  .app-features-container {
+    flex-direction: row;
   }
   .app-features-section.right {
     flex-direction: row-reverse;
